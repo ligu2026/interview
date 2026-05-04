@@ -1,0 +1,114 @@
+
+<style>
+  .topic-row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .rank { font-size: 12px; color: var(--color-text-tertiary); width: 20px; text-align: right; flex-shrink: 0; }
+  .label { font-size: 13px; color: var(--color-text-primary); width: 200px; flex-shrink: 0; }
+  .bar-wrap { flex: 1; background: var(--color-background-secondary); border-radius: 4px; height: 20px; overflow: hidden; }
+  .bar { height: 100%; border-radius: 4px; }
+  .pct { font-size: 12px; color: var(--color-text-secondary); width: 36px; text-align: right; flex-shrink: 0; }
+  .section-title { font-size: 11px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin: 20px 0 10px; }
+</style>
+
+<h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Bar chart showing the most common Python interview topics ranked by frequency</h2>
+
+<div style="padding: 0.5rem 0;">
+
+  <div class="section-title">Core language & fundamentals</div>
+
+  <div class="topic-row">
+    <span class="rank">1</span>
+    <span class="label">Data structures (list, dict, set, tuple)</span>
+    <div class="bar-wrap"><div class="bar" style="width:95%;background:#534AB7;"></div></div>
+    <span class="pct">95%</span>
+  </div>
+  <div class="topic-row">
+    <span class="rank">2</span>
+    <span class="label">OOP (classes, inheritance, dunder methods)</span>
+    <div class="bar-wrap"><div class="bar" style="width:90%;background:#534AB7;"></div></div>
+    <span class="pct">90%</span>
+  </div>
+  <div class="topic-row">
+    <span class="rank">3</span>
+    <span class="label">Mutability & references</span>
+    <div class="bar-wrap"><div class="bar" style="width:85%;background:#534AB7;"></div></div>
+    <span class="pct">85%</span>
+  </div>
+  <div class="topic-row">
+    <span class="rank">4</span>
+    <span class="label">Iterators, generators & yield</span>
+    <div class="bar-wrap"><div class="bar" style="width:83%;background:#534AB7;"></div></div>
+    <span class="pct">83%</span>
+  </div>
+  <div class="topic-row">
+    <span class="rank">5</span>
+    <span class="label">Decorators & closures</span>
+    <div class="bar-wrap"><div class="bar" style="width:80%;background:#534AB7;"></div></div>
+    <span class="pct">80%</span>
+  </div>
+  <div class="topic-row">
+    <span class="rank">6</span>
+    <span class="label">List/dict/set comprehensions</span>
+    <div class="bar-wrap"><div class="bar" style="width:78%;background:#534AB7;"></div></div>
+    <span class="pct">78%</span>
+  </div>
+
+  <div class="section-title">Memory, performance & internals</div>
+
+  <div class="topic-row">
+    <span class="rank">7</span>
+    <span class="label">GIL & threading vs multiprocessing</span>
+    <div class="bar-wrap"><div class="bar" style="width:75%;background:#0F6E56;"></div></div>
+    <span class="pct">75%</span>
+  </div>
+  <div class="topic-row">
+    <span class="rank">8</span>
+    <span class="label">Memory management & garbage collection</span>
+    <div class="bar-wrap"><div class="bar" style="width:70%;background:#0F6E56;"></div></div>
+    <span class="pct">70%</span>
+  </div>
+  <div class="topic-row">
+    <span class="rank">9</span>
+    <span class="label">async / await & asyncio</span>
+    <div class="bar-wrap"><div class="bar" style="width:68%;background:#0F6E56;"></div></div>
+    <span class="pct">68%</span>
+  </div>
+  <div class="topic-row">
+    <span class="rank">10</span>
+    <span class="label">Big-O & time complexity of builtins</span>
+    <div class="bar-wrap"><div class="bar" style="width:65%;background:#0F6E56;"></div></div>
+    <span class="pct">65%</span>
+  </div>
+
+  <div class="section-title">Error handling & tooling</div>
+
+  <div class="topic-row">
+    <span class="rank">11</span>
+    <span class="label">Exception handling & custom exceptions</span>
+    <div class="bar-wrap"><div class="bar" style="width:62%;background:#854F0B;"></div></div>
+    <span class="pct">62%</span>
+  </div>
+  <div class="topic-row">
+    <span class="rank">12</span>
+    <span class="label">Context managers & with statement</span>
+    <div class="bar-wrap"><div class="bar" style="width:60%;background:#854F0B;"></div></div>
+    <span class="pct">60%</span>
+  </div>
+  <div class="topic-row">
+    <span class="rank">13</span>
+    <span class="label">Type hints & mypy / Pydantic</span>
+    <div class="bar-wrap"><div class="bar" style="width:55%;background:#854F0B;"></div></div>
+    <span class="pct">55%</span>
+  </div>
+  <div class="topic-row">
+    <span class="rank">14</span>
+    <span class="label">Testing (unittest, pytest, mocking)</span>
+    <div class="bar-wrap"><div class="bar" style="width:52%;background:#854F0B;"></div></div>
+    <span class="pct">52%</span>
+  </div>
+
+  <div style="display:flex;gap:24px;margin-top:20px;font-size:12px;color:var(--color-text-secondary);">
+    <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;border-radius:2px;background:#534AB7;"></span>Core language</span>
+    <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;border-radius:2px;background:#0F6E56;"></span>Internals & performance</span>
+    <span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;border-radius:2px;background:#854F0B;"></span>Error handling & tooling</span>
+  </div>
+</div>
